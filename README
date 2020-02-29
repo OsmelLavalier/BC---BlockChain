@@ -1,0 +1,28 @@
+BlockChain implementation procedure
+
+
+*Block (consist of):
+ -transactions list
+ -proof
+ -timestamp
+ -previous hash (Block-1's current hash)
+
+*BlockChain Class to handle the Blocks
+ *set up the first block in the chain (genesis)
+ *new_block function(n_block)
+ *last_block function(): returns last block in chain
+ *append_block function(): adds blocks to the chain
+ *print function
+
+*Transaction (consists of):
+ +sender
+  +sender private_key
+ +reciever
+  +reciever private_key
+ +amount
+ 
+ +validation function():
+  +validates transaction
+ +generate priv_key function()
+  +generate private keys for sender and reciever
+ 
